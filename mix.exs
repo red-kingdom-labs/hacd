@@ -4,11 +4,11 @@ defmodule Hacd.MixProject do
   def project do
     [
       app: :hacd,
-      version: "0.1.0",
-      elixir: "~> 1.12",
+      version: "0.2.0",
+      elixir: "~> 1.15",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
-      name: "Hacd",
+      name: "HACD",
       description: "An Elixir library for inspecting and rendering diamonds"
     ]
   end
@@ -23,7 +23,7 @@ defmodule Hacd.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:phoenix_live_view, "~> 0.17.5"},
+      {:phoenix_live_view, "~> 0.20"},
       {:dialyxir, "~> 1.0", only: [:dev], runtime: false}
     ]
   end

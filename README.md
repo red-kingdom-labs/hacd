@@ -11,7 +11,7 @@ Add `hacd` to the list of your dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:hacd, github: "red-kingdom-labs/hacd", tag: "0.1.0"}
+    {:hacd, github: "red-kingdom-labs/hacd", tag: "v0.2.0"}
   ]
 end
 ```

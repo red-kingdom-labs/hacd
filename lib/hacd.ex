@@ -3,8 +3,12 @@ defmodule Hacd do
   Provides inspection and rendering capabilities for Hacash Diamonds.
   """
 
+  # Transcribed from https://github.com/hacash/explorer/blob/9d3dcf3ba6c76ed2270e96df6fc58bff56e308e8/static/jslib/diamondsvgimg.js
+  # The package.json references being MIT licensed but there is not a corresponding license file in the repo to carry forward.
+
   use Phoenix.Component
-  use Phoenix.HTML
+
+  import Phoenix.HTML, only: [raw: 1]
 
   @color_list [
     ["041B2D", "004E9A"],
